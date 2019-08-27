@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
             name='Destination',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(choices=[('jira', 'jira'), ('twitter', 'twitter')], max_length=16, unique=True)),
+                ('name', models.CharField(choices=[('jira', 'jira'), ('twitter', 'twitter'), ('simple-endpoint', 'simple-endpoint')], max_length=16, unique=True)),
                 ('enabled', models.BooleanField(default=True)),
             ],
             options={
